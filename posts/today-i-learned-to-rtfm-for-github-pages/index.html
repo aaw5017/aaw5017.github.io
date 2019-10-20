@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>    Today I Learned to RTFM for GitHub Pages - Alex Wardi's Blog
+</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="google-site-verification" content="1RcFHW7ZiNkYTwhCOrBglZdImGLHoZHO9fcXuUY5oMo" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?UA-65376704-1"></script>
+
+            <link rel="stylesheet" href="https://www.alexwardi.com/theme/blog.min.css?42a66dba" />
+
+
+        <link rel="icon" type="image/x-icon" href="https://www.alexwardi.com/favicon.ico" />
+
+    </head>
+
+    <body class="layout">
+        <header class="site-header text-center">
+            <section class="container">
+                <h1 class="m-0">
+                    <a href="https://www.alexwardi.com/">Alex Wardi's Blog</a>
+                </h1>
+                <h4 class="site-sub-name m-0">Code &#47; Music &#47; Ramblings</h4>
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main class="site-main">
+            <section class="container site-content">
+<article class="article">
+    <header>
+      <h1 class="article-title">Today I Learned to RTFM for GitHub Pages</h1>
+    </header>
+    <div class="article-content">
+        <p>Before we discuss my inability to read documentation correctly, let's talk about GitHub pages for a moment. They are an awesome resource, which every developer or designer should consider for hosting their personal or project website(s). In fact, at the time of this writing, this site itself is hosted on GitHub!</p>
+<p>Now, on to the matter at hand! GitHub has excellent documentation for GitHub Pages sites, <a href="https://help.github.com/en/articles/about-github-pages" target="_blank" rel="noopener noreferrer">located here</a>. That being said, I completely missed the bit about the three different types of pages, and what each one is able to use as a content &quot;source&quot;. When I first began setting up the repository for this site, I noticed a setting that allowed me to use the <strong>docs</strong> folder on the master branch as a content source. This was awesome, since it was akin to using a <strong>public</strong> folder alongside a <strong>src</strong> folder, like we see in so many project directory hierarchies. Without thinking twice, I renamed my repo from <strong>blog</strong> to <strong>aaw5017.github.io</strong> and took a break from the code during the work week&hellip;</p>
+<p>Returning back over the weekend, I again visited the settings page, but <em>did not</em> see the <strong>docs</strong> folder option any longer! The page informed me that &quot;User pages must be built from the master branch&quot;.</p>
+<p>So, what was going on here? Well, it turns out I didn't RTFM, and missed the part where it clearly states that you are unable to &quot;choose a different publishing source for user or organization sites&quot;. When I had last interacted with my repository, I renamed it, and effectively changed it from a <em><strong>Project Page</strong></em> to a <em><strong>User Page</strong></em>. That name change disallowed me from using the <strong>docs</strong> folder, and locked me into using the root of the master branch.</p>
+<hr style="margin:2rem 0">
+
+<h3>tl;dr</h3>
+<p>If you intend on using the <strong>docs</strong> folder within the master branch for GitHub Pages, make sure you are actually using a <strong>Project Page</strong> and not a <strong>User or Organization Page</strong>. Don't be like me; RTFM!</p>
+    </div>
+    <p class="article-back-to-home">
+        <a href="https://www.alexwardi.com/">&laquo; Back Home</a>
+    </p>
+</article>
+            </section>
+        </main>
+
+        <footer class="site-footer text-center">
+            <section class="container">
+                <div>
+                    &copy; 2019 &#124; Alex Wardi &#124; Generated with <a href="https://docs.getpelican.com/" rel="noopener noreferrer" target="_blank">Pelican</a>
+                </div>
+            </section>
+        </footer>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-65376704-1');
+        </script>
+    </body>
+</html>
